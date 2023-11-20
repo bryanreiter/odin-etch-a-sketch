@@ -18,13 +18,23 @@ body {
 }
 
 #canvas-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     width: 500px;
     height: 500px;
+    grid-gap: 1px; /* Add gap between grid items if needed */
+    grid-template-columns: repeat(16, 1fr); /* Adjust the column count based on your needs */
 }
+
+.pixel {
+    width: 30px; /* Adjust the size of each pixel based on your needs */
+    height: 30px;
+    border: 1px solid #000; /* Adjust the border color */
+    background-color: #fff; /* Adjust the background color */
+}
+
 
 #controls {
     display: flex;
