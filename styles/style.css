@@ -28,8 +28,6 @@ body {
 }
 
 .pixel {
-    width: calc((512px - 2px)/16);
-    height: calc((512px - 2px)/16);
     border: 1px solid #000; 
     background-color: #fff;
     box-sizing: border-box;

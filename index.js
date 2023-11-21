@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
         //create new grid
         createGrid(selectedPixelCount, selectedPixelCount);
+        updatePixelSize(selectedPixelCount);
     });
 
     console.log('Initial Pixel Count:', selectedPixelCount);
     //create initial grid
     createGrid(selectedPixelCount, selectedPixelCount);
+    updatePixelSize(selectedPixelCount);
 });
 
 
@@ -35,6 +37,20 @@ function createGrid(rows, cols){
             canvasContainer.appendChild(pixel)
         }
     }
-
+    
     canvasContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
+}
+
+function updatePixelSize(pixelCount){
+    //calc the pixelSize based on the count
+    const pixelSize = `calc((512px - 2px)/${pixelCount})`
+    //get the pixel element
+    const pixels = document.querySelectorAll('.pixel')
+
+    pixels.forEach(pixel => {
+        pixel.style.width = pixelSize
+        pixel.style.height = pixelSize
+    });
+
+
 }
