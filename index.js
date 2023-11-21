@@ -1,17 +1,21 @@
+//When page loads, auto select 16x16 size and creategrid based on that.
 document.addEventListener('DOMContentLoaded', function(){
-    const pixelCountDropdown = document.getElementById('pixel-count-dropdown')
+    //get the pixel count dropdown element
+    const pixelCountDropdown = document.getElementById('pixel-count-dropdown') 
+    //store the initial selected pixel count
     let selectedPixelCount = pixelCountDropdown.value
 
+    //Event listener when selectedPixelCount changes.
     pixelCountDropdown.addEventListener('change', function(){
         selectedPixelCount = pixelCountDropdown.value
         console.log('Selected Pixel Count:', selectedPixelCount)
 
-
-    createGrid(selectedPixelCount, selectedPixelCount);
+        //create new grid
+        createGrid(selectedPixelCount, selectedPixelCount);
     });
 
     console.log('Initial Pixel Count:', selectedPixelCount);
-
+    //create initial grid
     createGrid(selectedPixelCount, selectedPixelCount);
 });
 
