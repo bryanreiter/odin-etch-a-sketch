@@ -14,7 +14,7 @@ function createGrid(rows, cols){
         }
     }
 
-    canvasContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr`
+    canvasContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
 }
 
 
