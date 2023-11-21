@@ -43,7 +43,7 @@ function createGrid(rows, cols){
 
 function updatePixelSize(pixelCount){
     //calc the pixelSize based on the count
-    const pixelSize = `calc((512px - 2px)/${pixelCount})`
+    const pixelSize = `calc((500px)/${pixelCount})`
     //get the pixel element
     const pixels = document.querySelectorAll('.pixel')
 
