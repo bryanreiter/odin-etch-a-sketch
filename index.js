@@ -1,7 +1,25 @@
-// canvasContainer is where the grid will be formed
-const canvasContainer = document.getElementById('canvas-container')
+document.addEventListener('DOMContentLoaded', function(){
+    const pixelCountDropdown = document.getElementById('pixel-count-dropdown')
+    let selectedPixelCount = pixelCountDropdown.value
+
+    pixelCountDropdown.addEventListener('change', function(){
+        selectedPixelCount = pixelCountDropdown.value
+        console.log('Selected Pixel Count:', selectedPixelCount)
+
+
+    createGrid(selectedPixelCount, selectedPixelCount);
+    });
+
+    console.log('Initial Pixel Count:', selectedPixelCount);
+
+    createGrid(selectedPixelCount, selectedPixelCount);
+});
+
 
 function createGrid(rows, cols){
+
+    // canvasContainer is where the grid will be formed
+    const canvasContainer = document.getElementById('canvas-container')
     //this clears any previous content
     canvasContainer.innerHTML = ''
 
@@ -16,6 +34,3 @@ function createGrid(rows, cols){
 
     canvasContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
 }
-
-
-createGrid(16,16);
