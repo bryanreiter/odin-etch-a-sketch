@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const target = event.target
 
         if(target.classList.contains('pixel')){
-            target.classList.add('color-blue')
+            target.classList.add('color-black')
         }
     });
 });
