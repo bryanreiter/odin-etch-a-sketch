@@ -31,8 +31,8 @@ The Etch-A-Sketch project provides a simple yet interactive pixel art canvas. Us
 ## Project Structure
 
 - **index.html:** The main HTML file containing the structure of the project.
-- **style.css:** The CSS file defining the project's styles and layout.
-- **index.js:** The JavaScript file handling the logic for grid creation and user interactions.
+- **style.css:** The CSS file defines the project's styles and layout.
+- **index.js:** The JavaScript file handles the logic for grid creation and user interactions.
 
 ## License
 
