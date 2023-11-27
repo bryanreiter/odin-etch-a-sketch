@@ -36,6 +36,8 @@ The Etch-A-Sketch project provides a simple yet interactive pixel art canvas. Us
 
 ## License
 
+This project is licensed under the [MIT License](LICENSE).
+
 ## Author
 
 - [Bryan Reiter](https://github.com/bryanreiter)
